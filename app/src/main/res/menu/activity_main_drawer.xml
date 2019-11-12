@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_Measurement"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="Measurement_list" />
+        <item
+            android:id="@+id/nav_tailorlist"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="Tailor List" />
+        <item
+            android:id="@+id/nav_roomlist"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="Room List" />
+        <item
+            android:id="@+id/nav_masterMaterial"
+            android:icon="@drawable/ic_customer_black_24dp"
+            android:title="Material"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_subMasterMaterial"
+            android:icon="@drawable/ic_customer_black_24dp"
+            android:title="Material" />
+
+        <item
+            android:id="@+id/nav_karigar"
+            android:icon="@drawable/ic_customer_black_24dp"
+            android:title="Kaareegar" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Search" />
+        <item
+            android:id="@+id/nav_userpermission"
+            android:icon="@drawable/ic_customer_black_24dp"
+            android:title="User Permission" />
+
+
+        <item
+            android:id="@+id/nav_changepassword"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Reset Password" />
+
+        <item
+            android:id="@+id/nav_About"
+            android:icon="@drawable/ic_filter_list_black_24dp"
+            android:title="About" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

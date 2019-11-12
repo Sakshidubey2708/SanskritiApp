@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/backdrop">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/home_container" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/centre_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="30dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@mipmap/logo"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/orderLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bottom_background_layout_shape"
+                android:layout_below="@+id/pendingLinear"
+                android:visibility="gone"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:tint="@color/colort"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:id="@+id/orderCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/item_orderCreate"
+                    android:textColor="@color/colort"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/fonts"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/orderListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/pendingLinear"
+                android:padding="10dp"
+                android:background="@drawable/bottom_background_layout_shape">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_person_outline_black_24dp"
+                    android:tint="@color/colort"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:id="@+id/orderList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Order List"
+                    android:textColor="@color/colort"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/fonts"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pendingLinear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:background="@drawable/bottom_background_layout_shape">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_person_outline_black_24dp"
+                    android:tint="@color/colort"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:id="@+id/pendingOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="FollowUp Customers List"
+                    android:textColor="@color/colort"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/fonts"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+                <!--android:text="Pending For Advance"-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CreateOrdeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+
+
+                android:layout_above="@+id/orderListLayout"
+                android:padding="10dp"
+                android:visibility="visible"
+                android:background="@drawable/bottom_background_layout_shape">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_person_outline_black_24dp"
+                    android:tint="@color/colort"
+                    android:layout_margin="10dp" />
+
+                <TextView
+                    android:id="@+id/CreatesOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Order"
+                    android:textColor="@color/colort"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/fonts"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp" />
+
+                <!--android:text="Pending For Advance"-->
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

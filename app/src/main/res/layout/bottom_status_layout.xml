@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backdrop"
+    android:orientation="vertical">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:id="@+id/home_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </FrameLayout>
+                <RelativeLayout
+                    android:id="@+id/centre_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+                    <!--<ImageView-->
+                        <!--android:id="@+id/logo"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:src="@mipmap/logo"-->
+                        <!--android:visibility="gone"/>-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_above="@+id/layout2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/bottom_background_layout_shape"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_filter_list_black_24dp"
+                            android:tint="@color/colort" />
+
+                        <TextView
+                            android:id="@+id/pendingtTailorTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/fonts"
+                            android:textColor="@color/colort"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Pending Tailor List"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_above="@+id/layout3"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bottom_background_layout_shape"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/ic_filter_list_black_24dp"
+                            android:tint="@color/colort" />
+                        <TextView
+                            android:id="@+id/pendingOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/fonts"
+                            android:textColor="@color/colort"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:text="Pending Order List"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bottom_background_layout_shape"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/ic_filter_list_black_24dp"
+                            android:tint="@color/colort" />
+
+                        <TextView
+                            android:id="@+id/pendingToAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="@font/fonts"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/colort"
+                            android:textSize="16sp"
+                            android:text="Pending Amount List"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

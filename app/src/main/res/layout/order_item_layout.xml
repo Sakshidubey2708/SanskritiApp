@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/swipeRefreshLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp">
+
+
+        <RelativeLayout
+            android:id="@+id/catelogDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:id="@+id/catelogS.No"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/cName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CatalogName"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:id="@+id/c_design"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Design"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/sno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S.No."
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qty"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/aQty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AQty"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/c_pageNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PageNo"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/catelogPageNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/catelogS.No"
+                android:layout_marginTop="5dp">
+
+
+                <TextView
+                    android:id="@+id/c_pricec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MRP"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/materialtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MaterialType"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Unit"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+                <!--<Button-->
+                <!--android:id="@+id/okButton"-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:background="@drawable/add_cancel_button_shape"-->
+                <!--android:text="ok"/>-->
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<Button-->
+                <!--android:id="@+id/buttonstatus"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:text="Place Order"-->
+                <!--android:background="@drawable/add_cancel_button_shape"-->
+                <!--android:layout_weight="1"-->
+                <!--android:textSize="13sp"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_marginLeft="15dp"-->
+                <!--android:visibility="visible" />-->
+                <!--</RelativeLayout>-->
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/b0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/catelogPageNo"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/elight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CatalogName"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:id="@+id/aplot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Design"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/roman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S.No."
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/b1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b0"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/elightPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CatalogName"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+
+                <TextView
+                    android:id="@+id/elightAplot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Design"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/elightRoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S.No."
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b1"
+                android:layout_marginTop="5dp">
+
+                    <Button
+                        android:id="@+id/buttonstatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Place Order"
+                        android:background="@drawable/button_shape"
+                        android:layout_weight="1"
+                        android:textSize="13sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="15dp"
+                        android:visibility="visible"
+                        android:fontFamily="@font/fonts" />
+
+                <Button
+                    android:id="@+id/newCancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Cancel"
+                    android:background="@drawable/button_shape"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/fonts"/>
+
+                <Button
+                    android:id="@+id/NewholdButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Hold"
+                    android:background="@drawable/button_shape"
+                    android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/fonts"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone"  />
+
+
+                <ImageButton
+                    android:id="@+id/printButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    android:tint="@color/colorAccent"
+                    android:background="@drawable/ic_print_black_24dp"
+                    android:layout_alignParentRight="true"/>
+                <ImageButton
+                    android:id="@+id/sendButton"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_share_black_24dp"
+                    android:layout_below="@+id/b1"
+                    android:tint="@color/colorAccent"
+                    android:layout_alignParentRight="true"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backdrop">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="523dp"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="66dp"
+            android:layout_weight="1"
+            android:text="Enter Customer Name or Mobile Number"
+            android:textSize="16sp"
+            android:fontFamily="serif"/>
+
+        <EditText
+            android:id="@+id/editcust"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/edittext_shape"
+            android:drawableLeft="@drawable/ic_edit_black_24dp"
+            android:drawablePadding="15dp"
+            android:drawableTint="@color/colortt"
+            android:hint="Customer Name or Mobile Number"
+            android:inputType="text"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="serif"/>
+
+        <Button
+            android:id="@+id/editCustButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="195dp"
+            android:background="@drawable/button_shape"
+            android:fontFamily="@font/fonts"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

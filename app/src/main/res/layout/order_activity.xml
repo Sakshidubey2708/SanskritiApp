@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backdrop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/l2"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/cname"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+               android:layout_marginRight="10dp"
+                android:textAlignment="center"
+                android:paddingLeft="10dp"
+                android:hint="Customer Name"
+                android:inputType="text"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+            <EditText
+                android:id="@+id/oderdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Date"
+                android:textAlignment="center"
+                android:inputType="date"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/l3"
+            android:layout_marginBottom="10dp">
+
+            <Spinner
+                android:id="@+id/roomname"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/catalog"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/l4"
+            android:layout_marginBottom="10dp">
+            <Spinner
+                android:id="@+id/materialtype"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp">
+            </Spinner>
+            <Spinner
+                android:id="@+id/measurement"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+            </Spinner>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+            <Spinner
+                android:id="@+id/amount"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/pay_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Amount"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l4"
+            android:layout_marginTop="10dp">
+            <EditText
+                android:id="@+id/order_status"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+               android:hint="Order status"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l5"
+          android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Order"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_shape"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

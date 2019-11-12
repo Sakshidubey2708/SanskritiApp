@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+            <LinearLayout
+                android:id="@+id/customerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Customer Name"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/fonts"
+                    android:textSize="12sp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/customer_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Room Name"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:fontFamily="@font/fonts"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customerinfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerinfo"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Customer Name"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:gravity="left"
+                    android:fontFamily="@font/fonts"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/room_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Room Name"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/fonts"/>
+
+            </LinearLayout>
+            <!--<TextView-->
+            <!--android:layout_width="45dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignEnd="@+id/customerinfo2"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_below="@+id/customerinfo"-->
+            <!--android:text="     All"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/white"/>-->
+            <ImageButton
+                android:id="@+id/updateButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/circle_shape"
+                android:src="@drawable/ic_add_black_24dp"
+                android:tint="@color/white"/>
+        </RelativeLayout>
+
+</RelativeLayout>

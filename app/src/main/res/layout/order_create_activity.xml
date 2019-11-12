@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:windowSoftInputMode="stateHidden"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textSize="16sp"
+                    android:text="Customer Details"
+                    android:textColor="@color/black" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <AutoCompleteTextView
+                        android:id="@+id/customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/order_edittext_shape"
+                        android:fontFamily="serif"
+                        android:hint="Customer Name"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        />
+                    <AutoCompleteTextView
+                        android:id="@+id/customer_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/order_edittext_shape"
+                        android:fontFamily="serif"
+                        android:hint="Contact"
+                        android:padding="10dp"
+                        android:textSize="15sp"
+                        android:inputType="number"
+                        android:textColor="@color/black"
+                      />
+
+                    <TextView
+                        android:layout_width="5dp"
+                        android:layout_height="40dp"
+                        android:text="hgdghjddg"
+                        android:visibility="invisible" />
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+
+                    <EditText
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1.6"
+                        android:background="@drawable/order_edittext_shape"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:fontFamily="serif"
+                        android:hint="Date"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dark_gray" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:text="Order Details"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:orientation="vertical">
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/roomRecyls"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scrollbars="vertical"
+
+                                android:fastScrollEnabled="true"
+                                android:fastScrollAlwaysVisible="true"
+
+                                app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+                                app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+                                app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+                                app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"
+                                />
+
+                    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/roomeName"
+    android:textStyle="bold"
+    android:textSize="14sp"
+    android:textColor="@color/blue"
+    android:layout_marginTop="5dp"
+    android:paddingLeft="25dp"
+    android:visibility="gone"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="254dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone">
+
+                        <android.support.v4.widget.SwipeRefreshLayout
+                            android:id="@+id/mpageswipeRefreshLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/mPagerecyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="254dp"
+                                android:scrollbars="vertical"
+
+                                android:fastScrollEnabled="true"
+                                android:fastScrollAlwaysVisible="true"
+
+                                app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+                                app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+                                app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+                                app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"
+                                />
+                        </android.support.v4.widget.SwipeRefreshLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:id="@+id/OrderAdd"
+                            android:layout_width="167dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/button_shape"
+                            android:text="Order"
+                            android:textColor="@color/white"
+                            android:fontFamily="serif"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:visibility="visible"/>
+                        <Button
+                            android:id="@+id/NextOrder"
+                            android:layout_width="167dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/button_shape"
+                            android:text="Next Order"
+                            android:textColor="@color/white"
+                            android:fontFamily="serif"
+                            android:textSize="15sp"
+                            android:layout_marginTop="3dp"
+                            android:visibility="gone"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/dark_gray" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+    </LinearLayout>
+    <Button android:id="@+id/ProceedBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Proceed"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:fontFamily="serif"
+        android:textSize="15sp"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

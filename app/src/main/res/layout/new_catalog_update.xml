@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_catalogborder"
+    android:padding="3dp">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:fontFamily="serif"
+        android:text="Catalog's"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colort"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:id="@+id/views"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_gray"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/views"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_of_underback">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:visibility="invisible"
+    android:focusableInTouchMode="true"
+    android:focusable="true"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayoutass"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewssss"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:fastScrollEnabled="true"
+                android:fastScrollAlwaysVisible="true"
+
+
+                app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+                app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+                app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+                app:fastScrollVerticalTrackDrawable="@drawable/line_drawable" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/r"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/l"
+    android:layout_marginTop="10dp"
+        android:visibility="gone">
+    <TextView
+
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Total Amount"
+        android:gravity="center|left"
+        android:paddingLeft="15dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:fontFamily="serif"/>
+    <TextView
+        android:id="@+id/AfetrDiscountAmount"
+        android:layout_width="match_parent"
+        android:gravity="center|left"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+        <TextView
+
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="Tailor Amount"
+            android:gravity="center|left"
+            android:paddingLeft="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="serif"/>
+        <TextView
+            android:id="@+id/tailorAmount"
+            android:layout_width="match_parent"
+            android:gravity="center|left"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:layout_marginTop="10dp">
+        <Button
+        android:id="@+id/ProceedBtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+        <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circle_shape"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_alignParentRight="true"
+        android:tint="@color/white"
+        android:layout_margin="5dp" />
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+    <RelativeLayout
+        android:id="@+id/relative_medium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal|center"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal|center"
+                android:layout_height="250dp">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:gravity="center_horizontal|center"
+                    android:scrollbars="vertical"
+                    android:fastScrollEnabled="true"
+                    android:fastScrollAlwaysVisible="true"
+
+                    app:fastScrollHorizontalThumbDrawable="@drawable/thumb_drawable"
+                    app:fastScrollHorizontalTrackDrawable="@drawable/line_drawable"
+                    app:fastScrollVerticalThumbDrawable="@drawable/thumb_drawable"
+                    app:fastScrollVerticalTrackDrawable="@drawable/line_drawable"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="left|center"
+                android:text=" Amount"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/TotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="left|center"
+                android:hint=" Amount"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="serif"
+                android:paddingLeft="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/order_edittext_shape" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center"
+                    android:text=" Advance Amount"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="serif"
+                    android:layout_weight="1"/>
+                <AutoCompleteTextView
+                    android:id="@+id/advanceAmounts"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center"
+                    android:hint="Advance Amount"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:fontFamily="serif"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/order_edittext_shape" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center"
+                    android:text=" Total Amount"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:fontFamily="serif"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:id="@+id/pendingAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="left|center"
+                    android:hint=" Total Amount"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:fontFamily="serif"
+                    android:layout_weight="1"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/order_edittext_shape" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp">
+               <Button
+                   android:id="@+id/confirm"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                     android:layout_gravity="center"
+                    android:text="Confirm"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:fontFamily="serif"
+                   android:textAllCaps="false"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:id="@+id/fab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="16dp"-->
+            <!--android:clickable="true"-->
+            <!--android:src="@drawable/ic_add_black_24dp"-->
+            <!--android:tint="@color/colort"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--app:layout_anchorGravity="center"/>-->
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

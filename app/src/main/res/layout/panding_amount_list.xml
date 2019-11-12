@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/custName"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/cherry"
+                android:hint="Name"
+                android:padding="5dp"
+                android:fontFamily="@font/fonts" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"/>
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textColor="@color/cherry"
+                android:hint="Order"
+                android:padding="5dp" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:hint="Status"
+                android:textSize="15sp"
+                android:textColor="@color/cherry"
+                android:padding="5dp"
+                android:fontFamily="@font/fonts" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/amountPendimg"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:hint="Amount Pending"
+                android:padding="5dp"
+                android:textColor="@color/cherry"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/orderdate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:hint="Amount Total"
+                android:padding="5dp"
+                android:textColor="@color/cherry"
+                android:textSize="15sp" />
+            <Button
+                android:id="@+id/receive"
+                android:layout_width="305dp"
+                android:layout_height="30dp"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:text="Receive"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="305dp"
+                android:layout_height="30dp"
+                android:id="@+id/checked"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:src="@drawable/ic_check_box_black_24dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_weight="3">-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:visibility="invisible"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/receive"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:text="Receive"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@drawable/button_shape"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:visibility="invisible"/>-->
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:visibility="invisible"/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

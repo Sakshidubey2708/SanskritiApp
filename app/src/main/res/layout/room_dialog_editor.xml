@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/lenear1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+
+            <EditText
+                android:id="@+id/rname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 "
+                android:hint="New Name"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts"/>
+
+            <EditText
+                android:id="@+id/oldname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 "
+                android:hint="Old Name"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lenear5"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lenear1"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="Add"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/fonts"/>
+
+            <TextView
+                android:layout_width="12dp"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/fonts"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

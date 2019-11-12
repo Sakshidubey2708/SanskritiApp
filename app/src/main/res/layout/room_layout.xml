@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Add Room"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="@font/fonts"/>
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginEnd="12dp"
+            android:padding="5dp"
+            android:tint="@color/white"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:background="@drawable/circle_shape" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/roomNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  "
+            android:textSize="14sp"
+            android:inputType="text"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 "
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:fontFamily="@font/fonts"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <Button
+            android:id="@+id/buttonAddOrder"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:text="Add"
+            android:fontFamily="@font/fonts"
+            android:textColor="@color/white"
+            android:background="@color/button_shape"/>
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="4dp"
+            android:layout_weight="1.7"/>
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:text="Cancel"
+            android:background="@color/button_shape"/>
+
+    </LinearLayout>
+
+</LinearLayout>

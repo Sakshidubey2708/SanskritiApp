@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_gravity="center|center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/l0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/order_edittext_shape">
+
+                    <TextView
+                        android:id="@+id/roomTypes"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"
+                        android:hint="View"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+
+                    <TextView
+                        android:id="@+id/materialtype"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="Wallpaper"
+                        android:padding="5dp"
+                        android:visibility="gone"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+
+                    <TextView
+                        android:id="@+id/quantities"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="1"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+                    <TextView
+                        android:id="@+id/roomid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/orderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/order_item_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/catalog_item_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/customerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/roomName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+
+                        android:visibility="gone"
+                        android:id="@+id/materialName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+
+
+                    <TextView
+                        android:id="@+id/material_item_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/tailorAddCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Tailor"
+                        android:visibility="gone"
+                        android:textSize="10sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/fonts"/>
+                    <TextView
+                        android:id="@+id/RESULTCALCULATEaFTERdISCOUNT"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.6"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="TotalAmount"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+
+                    <ImageButton
+                        android:id="@+id/editbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:tint="@color/green"
+                        android:visibility="invisible"
+                        android:background="@color/white" />
+                    <ImageButton
+                        android:id="@+id/deltbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:visibility="visible"
+                        android:src="@drawable/ic_delete_forever_black_24dp"
+                        android:background="@color/white"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center_horizontal|center"
+                    android:background="@drawable/order_edittext_shape">
+
+                    <TextView
+                        android:id="@+id/catalogMrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="MRP/-"
+                        android:layout_weight="1.5"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+                    <TextView
+                        android:id="@+id/catalog_Discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.6"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="25%"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/RESULTCALCULATEaFTERdISCOUNT"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1.6"-->
+                        <!--android:textSize="10sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:hint="TotalAmount"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:fontFamily="@font/fonts" />-->
+
+                    <TextView
+                        android:id="@+id/catalogdesignName"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="12sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="AfterDicount"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+                    <!--<TextView-->
+                        <!--android:id="@+id/materialtype"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:hint="Wallpaper"-->
+                        <!--android:padding="5dp"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:fontFamily="@font/fonts" />-->
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

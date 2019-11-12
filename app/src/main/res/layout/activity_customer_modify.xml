@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CustomerModifyActivity"
+    android:background="@mipmap/backdrop"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/serchByNAme"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Search By name"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textColor="@color/cherrish"
+                android:textStyle="bold"
+                android:background="@drawable/layout_design_shape"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9" />
+
+            <TextView
+                android:id="@+id/searchByNo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="Search By Mobile"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:textColor="@color/cherrish"
+                android:textStyle="bold"
+                android:background="@drawable/layout_design_shape"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SerchNaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:visibility="visible">
+
+            <AutoCompleteTextView
+                android:id="@+id/customerName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="@string/customername"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="35"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/custContact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/customerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/custInteriarName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_edit_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Interior Name (Optional)"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="35"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/cIds"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+            <EditText
+                android:id="@+id/custInteriorMobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Interior Contact Number (Optional)"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/updateCustButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/fonts"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/SearchNoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/customercontact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/cName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="@string/customername"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="35"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/cId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"/>
+
+
+            <EditText
+                android:id="@+id/cAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_home_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Address"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/cInteriarName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_edit_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Interior Name (Optional)"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:maxLength="35"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:id="@+id/cInteriorMobile"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_shape"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/colorAccent"
+                android:fontFamily="@font/fonts"
+                android:hint="Interior Contact Number (Optional)"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/CustButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/button_shape"
+                android:fontFamily="@font/fonts"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

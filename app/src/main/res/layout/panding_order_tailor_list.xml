@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tailorName"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:textColor="@color/cherry"
+                        android:hint="Tailor Name"
+                        android:padding="5dp"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/fonts" />
+                    <TextView
+                        android:id="@+id/order"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1.9"
+                        android:textSize="15sp"
+                        android:textColor="@color/cherry"
+                        android:hint="Order"
+                        android:padding="5dp" />
+
+                    <TextView
+                        android:id="@+id/orderid"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:hint="Status"
+                        android:textSize="15sp"
+                        android:textColor="@color/cherry"
+                        android:padding="5dp"
+                        android:fontFamily="@font/fonts" />
+                    <Button
+                        android:id="@+id/receive"
+                        android:layout_width="305dp"
+                        android:layout_height="30dp"
+                        android:text="Received"
+                        android:layout_weight="1.9"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="@drawable/button_shape"
+                        android:visibility="invisible"/>
+
+                    <ImageView
+                        android:layout_width="305dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/checked"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_check_box_black_24dp"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</LinearLayout>

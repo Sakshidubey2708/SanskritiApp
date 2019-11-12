@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:fontFamily="serif"
+            android:text="Catalog's"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colort"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"/>
+        <View
+            android:id="@+id/views"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/dark_gray"
+            android:layout_below="@+id/text"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/designName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/order_edittext_shape"
+                android:hint="Catalog Name"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/catalog_design_no"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="12sp"
+                android:background="@drawable/order_edittext_shape"
+                android:hint="Design/Serial No."
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:text="hgdghjddg"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/catalog_page_no"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/order_edittext_shape"
+                android:hint="Page No."
+                android:textSize="12sp"
+
+                android:inputType="number"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:text="hgdghjddg"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/catalog_quality"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/order_edittext_shape"
+                android:hint="Quality"
+                android:textSize="12sp"
+                android:inputType="text"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/catalog_mrp"
+
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:hint="MRP"
+                android:background="@drawable/order_edittext_shape"
+                android:textSize="12sp"
+                android:inputType="numberDecimal"
+                android:paddingLeft="15dp" />
+
+
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:text="hgdghjddg"
+                android:visibility="invisible" />
+
+
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:text="hgdghjddg"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/catalog_quantity"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:textSize="12sp"
+                android:hint="Quantity"
+                android:background="@drawable/order_edittext_shape"
+                android:paddingLeft="15dp" />
+            <EditText
+                android:id="@+id/catalog_dicount"
+                android:textSize="12sp"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/order_edittext_shape"
+                android:hint="Dis."
+                android:inputType="numberDecimal"
+                android:paddingLeft="15dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:id="@+id/measurmentDat"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/order_edittext_shape"
+                android:hint="Measurement"
+                android:textSize="12sp"
+                android:inputType="number"
+                android:paddingLeft="15dp" />
+
+            <TextView
+
+                android:layout_width="5dp"
+                android:layout_height="40dp"
+                android:text="hgdghjddg"
+                android:visibility="invisible" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:background="@drawable/order_edittext_shape">
+
+                <Spinner
+                    android:id="@+id/measurement_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/order_edittext_shape">
+
+
+
+            <TextView
+
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text="Total Amount"
+                android:gravity="center|left"
+                android:paddingLeft="15dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:fontFamily="serif"/>
+            <TextView
+                android:id="@+id/AfetrDiscountAmount"
+                android:layout_width="match_parent"
+                android:gravity="center|left"
+                android:layout_height="40dp"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/ProceedBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="serif"
+                android:text="Next Order"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/cancelBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorPrimaryDark"
+                android:fontFamily="serif"
+                android:text="Order Done"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/circle_shape"
+        android:src="@drawable/ic_add_black_24dp"
+        android:layout_alignParentRight="true"
+        android:tint="@color/white"
+        android:layout_margin="5dp" />
+</RelativeLayout>

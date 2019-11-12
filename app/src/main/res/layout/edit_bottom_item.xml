@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_chooser_view_content">
+
+    <RelativeLayout
+        android:id="@+id/edit_relative_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp">
+
+        <LinearLayout
+            android:id="@+id/lenear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_editElight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Elight Qty"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/ediElight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="    "
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts"
+                android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_pageNo."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Roman Qty"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/ediRoman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="        "
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts"
+                android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_AQty."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="A Plot Qty"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/ediAplot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="        "
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lenearPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lenear1"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Price."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Elight Price"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/elighPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="     "
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts"
+                android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_Roman."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Roman Price"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/romaPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint=""
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_RPrice."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="A Plot Price"
+                android:layout_weight="1">
+            <EditText
+                android:id="@+id/aPlotPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="      "
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/fonts" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lenear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lenearPrice"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/updateElight"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="Update"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_shape"/>
+
+            <TextView
+                android:layout_width="12dp"
+                android:layout_height="2dp" />
+
+            <Button
+                android:id="@+id/cancelElight"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_shape"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

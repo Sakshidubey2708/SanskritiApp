@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/home_container" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/customercardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/customerLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_Hole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Customer Name">
+                            <AutoCompleteTextView
+                                android:id="@+id/customerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="  "
+                                android:textSize="14sp"
+                               android:inputType="text"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 "
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/fonts"
+                                android:layout_weight="1"
+                                android:paddingLeft="20dp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <!--<ImageButton-->
+                        <!--android:id="@+id/addnewCustomerButton"-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:src="@drawable/ic_add_white_24dp"-->
+                        <!--android:background="@color/white"-->
+                        <!--android:tint="@color/colorAccent"-->
+                        <!--android:layout_margin="10dp" />-->
+
+                        <ImageButton
+                            android:id="@+id/addnewCustomerButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/button_shape"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:tint="@color/white"
+                            android:visibility="gone"/>
+
+                        <ImageButton
+                            android:id="@+id/shareButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:tint="@color/colorAccent"
+                            android:background="@drawable/ic_share_black_24dp"
+                            android:visibility="gone"
+                            android:layout_alignParentRight="true" />
+                        <ImageButton
+                            android:id="@+id/printButton"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"
+                            android:tint="@color/colorAccent"
+                            android:background="@drawable/ic_print_black_24dp"
+                            android:visibility="gone"
+                            android:layout_alignParentRight="true" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dateLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:layout_below="@+id/customerLayout"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_Mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Mobile">
+                            <EditText
+                                android:id="@+id/customerContact"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="       "
+                                android:fontFamily="@font/fonts"
+                                android:textSize="14sp"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:paddingLeft="20dp"/>
+                        </android.support.design.widget.TextInputLayout>
+                        <TextView
+                            android:layout_width="8dp"
+                            android:layout_height="match_parent" />
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_Address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Address">
+                            <EditText
+                                android:id="@+id/interiorAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="      "
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/fonts"
+                                android:textSize="14sp"
+                                android:layout_weight="1"
+                                android:gravity="center" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/interiorLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dateLayout"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_Picker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Date">
+                            <EditText
+                                android:id="@+id/orderDatePicker"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="                   "
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/fonts"
+                                android:layout_weight="1"
+                                android:paddingLeft="15dp"
+                                android:layout_marginRight="5dp"
+                                android:inputType="none" />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_Amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Amount">
+                            <EditText
+                                android:id="@+id/amountValue"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint=" "
+                                android:text="0.0"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/fonts"
+                                android:paddingLeft="15dp"
+                                android:layout_weight="1"
+                                android:inputType="number"
+                                android:layout_marginLeft="5dp" />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/input_layout_total"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Total Amount">
+                            <EditText
+                                android:id="@+id/textViewATotalAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="           "
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/fonts"
+                                android:textSize="14sp"
+                                android:layout_weight="1" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/orderCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/customercardView"
+                android:layout_marginTop="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/dateLayout"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="center_horizontal">-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/orderDatePicker"-->
+                    <!--android:layout_width="140dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:hint="Date"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:paddingLeft="14dp"-->
+                    <!--android:layout_marginRight="5dp"/>-->
+
+                    <!--<EditText-->
+                    <!--android:id="@+id/amountValue"-->
+                    <!--android:layout_width="140dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:hint="Amount"-->
+                    <!--android:text="0.0"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:paddingLeft="14dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:layout_marginLeft="5dp"/>-->
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buttonHallCardView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/customercardView">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/buttonHallLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/addOrder"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Submit Order"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/fonts"
+                            android:background="@drawable/button_shape" />
+                        <Button
+                            android:id="@+id/addRoom"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:text="Room +"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/fonts"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+                            android:layout_weight="1"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="5dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/buttonRoomAddLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_below="@+id/buttonHallLayout">
+
+                        <!--<Button-->
+                        <!--android:id="@+id/addRoom"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:background="@drawable/add_cancel_button_shape"-->
+                        <!--android:text="Add Room"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:textSize="16sp"-->
+                        <!--android:visibility="visible"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_margin="5dp" />-->
+                        <!--<Button-->
+                        <!--android:id="@+id/addstatus"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40dp"-->
+                        <!--android:background="@drawable/add_cancel_button_shape"-->
+                        <!--android:text="Add Status"-->
+                        <!--android:textColor="@color/white"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:visibility="gone"-->
+                        <!--android:layout_alignParentRight="true"-->
+                        <!--android:layout_margin="5dp"/>-->
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/listHallCardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/buttonHallCardView">
+
+                <RelativeLayout
+                    android:id="@+id/rlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <android.support.v4.widget.SwipeRefreshLayout
+                            android:id="@+id/swipeRefreshLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recyclerView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/toolbar" />
+                        </android.support.v4.widget.SwipeRefreshLayout>
+                    </LinearLayout>
+
+                    <!--<ListView-->
+                    <!--android:id="@+id/hallList"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--&gt;-->
+                    <!--</ListView>-->
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    <!--<include-->
+    <!--android:id="@+id/header_relative_inclue"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--layout="@layout/layout_button_roomlist"-->
+    <!--android:visibility="gone"/>-->
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#bc4772</color>-->
+    <!--<color name="colorPrimaryDark">#9b1e6d</color>-->
+    <!--<color name="colorAccent">#be225b</color>-->
+
+    <!--<color name="colorPrimary">#FFF9AC</color>-->
+    <!--<color name="colorPrimaryDark">#eae497</color>-->
+    <!--<color name="colorAccent">#C03825</color>-->
+    //rrrr
+
+    <color name="colorPrimary">#e68e4b</color>
+    <color name="colorPrimaryDark">#e68e4b</color>
+    <color name="colorAccent">#f18838</color>
+
+    <color name="button_shape">#e7740d</color>
+    <color name="colort">#b44205</color>
+    <color name="colortt">#d96702</color>
+    <color name="fab1_color">#C03825</color>
+
+    <color name="fab2_color">#2196F3</color>
+    <color name="sky_blue">#69b6f2</color>
+    <color name="light_blue">#91c8f2</color>
+    <color name="black">#000</color>
+    <color name="blue">#545db4</color>
+    <color name="green">#197019</color>
+    <color name="red">#f42909</color>
+    <color name="cherry">#122c33</color>
+    <color name="cherrish">#a66101</color>
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
+    <color name="visible">#f5f0f0</color>
+
+    <color name="btn">#de6c49</color>
+
+    <color name="white">#fff</color>
+    <color name="half_white">#f2f0f0</color>
+    <color name="gray">#9f9c9c</color>
+    <color name="light_gray">#dedddd</color>
+    <color name="dark_gray">#505050</color>
+    <color name="some_dark_gray">#6e6c6c</color>
+    <color name="button_background_color">#2269ac</color>
+    <color name="unsuscolor">#47d5df</color>
+    <color name="transparenncy">#8c000000</color>
+    <color name="ColorPrimary">#FF5722</color>
+    <color name="ColorPrimaryDark">#E64A19</color>
+    <color name="transparency">#00000000</color>
+    <color name="color">#f4be0f</color>
+    <color name="fontcolor">#88399c</color>
+    <color name="light_green">#81b681</color>
+</resources>

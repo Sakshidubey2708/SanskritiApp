@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/customerinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/receivedby"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/customer_mobile_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Room Name"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/customerinfo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerinfo"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/receivedby"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/room_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="Room Name"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/customerinfo2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_below="@+id/customerinfo"
+                android:text="     All"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fonts"/>
+
+            <Button
+                android:id="@+id/allOkButtton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignEnd="@+id/customerinfo2"
+                android:layout_below="@+id/customerinfo"
+                android:background="@drawable/circle_shape"
+                android:text="Ok"
+                android:textColor="@color/white"
+                android:fontFamily="@font/fonts"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_medium"
+        android:layout_width="match_parent"
+        android:layout_height="960px"
+        android:layout_below="@+id/Relative1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Relative3"
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="@color/colorAccent"
+        android:layout_below="@id/relative_medium">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="260px"
+            android:background="@color/colorAccent"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:id="@+id/header_linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/elight"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="@string/elight"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/roman"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="-0"
+                    android:text="Roman"
+                    android:textSize="13sp"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/aPlat"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="A Plat"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="Total"
+                    android:textColor="@color/white"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/header_linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal"
+                android:layout_below="@+id/header_linear1"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/elight_value"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="elight"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/roman_value"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="roman"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/aPlat_value"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="a plot"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fonts"/>
+
+                <TextView
+                    android:id="@+id/total_value"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center"
+                    android:text="1223"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/fonts"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/updateButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/circle_shape"
+        android:src="@drawable/ic_add_black_24dp" />
+
+</RelativeLayout>

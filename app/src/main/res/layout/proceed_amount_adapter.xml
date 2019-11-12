@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal|center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center|center_horizontal"
+                android:padding="10dp"
+                android:background="@drawable/order_edittext_shape">
+
+                <LinearLayout
+                    android:id="@+id/l0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_gravity="center|center_horizontal"
+                    android:background="@drawable/order_edittext_shape">
+
+                    <TextView
+                        android:id="@+id/roomTypes"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="13sp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="RestRoom"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+                    <TextView
+                        android:id="@+id/materialtype"
+                        android:layout_width="140dp"
+                        android:layout_height="30dp"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="Wallpaper"
+                        android:visibility="visible"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+
+
+                    <TextView
+                        android:id="@+id/catalogMrps"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/fonts"
+                        android:hint="1200/-"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/quntity"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/fonts"
+                        android:layout_weight="1.4"
+                        android:padding="5dp"
+                        android:text="1234"
+                        android:visibility="invisible"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/roomid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/orderId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/order_item_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:id="@+id/catalog_item_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/material_item_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:id="@+id/tailorAddCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textStyle="bold"
+                        android:text="Tailor Add"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/fonts"/>
+                    <ImageButton
+                        android:id="@+id/editbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_edit_black_24dp"
+                        android:tint="@color/green"
+                        android:visibility="invisible"
+                        android:background="@color/white" />
+                    <ImageButton
+                        android:id="@+id/deltbtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_delete_forever_black_24dp"
+                        android:background="@color/white"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center|center_horizontal"
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:background="@drawable/order_edittext_shape">
+
+                    <TextView
+                        android:id="@+id/catalogdesignName"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/fonts"
+                        android:hint="Design"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Quantity"
+                        android:textSize="10sp"
+                        android:paddingLeft="25dp"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                            android:visibility="gone"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:hint="5"
+                        android:padding="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/fonts" />
+                    <TextView
+                        android:id="@+id/meter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/fonts"
+                        android:hint="e.g.2"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="25dp"
+                        android:paddingLeft="15dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Discount"
+                        android:textSize="13sp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/catalog_Discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/fonts"
+                        android:hint=""
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:paddingLeft="15dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Total Amount"
+                        android:padding="5dp"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/RESULTCALCULATEaFTERdISCOUNT"
+                        android:layout_width="wrap_content"
+                        android:hint=""
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="3dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

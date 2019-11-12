@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_customer"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:iconTint="@color/white"
+        android:title="@string/customer" />
+
+    <item
+        android:id="@+id/navigation_Order"
+        android:icon="@drawable/ic_local_grocery_store_black_24dp"
+        android:iconTint="@color/white"
+        android:title="@string/order" />
+
+    <item
+        android:id="@+id/navigation_status"
+        android:icon="@drawable/ic_edit_black_24dp"
+        android:iconTint="@color/white"
+        android:title="@string/Status"/>
+
+</menu>
